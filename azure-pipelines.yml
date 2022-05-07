@@ -1,0 +1,8 @@
+trigger:
+  - master
+
+pool: PublicBuilds
+
+steps:
+  - script: echo "Hello world"
+    displayName: 'test script'
