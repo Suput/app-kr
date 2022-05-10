@@ -3,6 +3,14 @@ trigger:
 
 pool: PublicBuilds
 
-steps:
-  - script: echo "Hello world"
-    displayName: 'test script'
+stages:
+  - stage: Test
+    jobs:
+      - job: job1
+        steps:
+          - script: echo "Hello world"
+            displayName: 'test script'
+      - job: job2
+        steps:
+          - script: echo "Hello world"
+            displayName: 'test script'
